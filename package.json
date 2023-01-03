@@ -8,11 +8,13 @@
     "start-prod": "node app.js",
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
-    "build": "webpack --mode production"
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "build": "webpack --mode production",
+    "test:e2e": "cypress open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smartlyio/fullstackopen-cicd.git"
+    "url": "git+https://github.com/lalitlab/fullstackopen-cicd.git"
   },
   "keywords": [
     "fullstack-open"
@@ -20,9 +22,9 @@
   "author": "Smartly.io",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/smartlyio/fullstackopen-cicd/issues"
+    "url": "https://github.com/lalitlab/fullstackopen-cicd/issues"
   },
-  "homepage": "https://github.com/smartlyio/fullstackopen-cicd#readme",
+  "homepage": "https://github.com/lalitlab/fullstackopen-cicd#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-transform-runtime": "^7.10.0",

@@ -6,7 +6,8 @@ module.exports = {
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    'plugin:cypress/recommended'
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -43,7 +44,12 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
+    "no-console": "off",
     "react/prop-types": 0
+  },
+  "globals": {
+    "process": true,
+    "cy": true,
+    "module": true
   }
 }
